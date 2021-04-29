@@ -17,6 +17,8 @@
 #ifndef RTC_DEFINES_H
 #define RTC_DEFINES_H
 
-#define RTC_FREQ_DIV_DEF 100 ///< Clock divisor is set stone in whitepaper
+/// \brief Number of cycles between RTC ticks
+/// Changing this value afects the machine state hash
+#define RTC_FREQ_DIV_DEF 100000
 
 #endif /* end of include guard: RTC_DEFINES_H */
