@@ -19,6 +19,7 @@
 
 /// \brief Number of cycles between RTC ticks
 /// Changing this value afects the machine state hash
-#define RTC_FREQ_DIV_DEF 100000
+/// Higher values decrease the performance of the interactive machine emulator
+#define RTC_FREQ_DIV_DEF 100
 
 #endif /* end of include guard: RTC_DEFINES_H */
