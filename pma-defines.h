@@ -43,12 +43,17 @@
 #define PMA_WORD_SIZE_DEF      8     ///< Physical memory word size.
 #define PMA_MAX_DEF            32    ///< Maximum number of PMAs
 
-#define PMA_MEMORY_DID_DEF 0 ///< Device ID for memory
-#define PMA_SHADOW_DID_DEF 1 ///< Device ID for shadow device
-#define PMA_DRIVE_DID_DEF  2 ///< Device ID for drive device
-#define PMA_CLINT_DID_DEF  3 ///< Device ID for CLINT device
-#define PMA_HTIF_DID_DEF   4 ///< Device ID for HTIF device
-#define PMA_DHD_DID_DEF    5 ///< Device ID for DHD
+#define PMA_MEMORY_DID_DEF                    0 ///< Device ID for memory
+#define PMA_SHADOW_DID_DEF                    1 ///< Device ID for shadow device
+#define PMA_FLASH_DRIVE_DID_DEF               2 ///< Device ID for flash drive device
+#define PMA_CLINT_DID_DEF                     3 ///< Device ID for CLINT device
+#define PMA_HTIF_DID_DEF                      4 ///< Device ID for HTIF device
+#define PMA_DHD_DID_DEF                       5 ///< Device ID for DHD
+#define PMA_RX_BUFFER_DID_DEF                 6 ///< Device ID for RX buffer
+#define PMA_TX_BUFFER_DID_DEF                 7 ///< Device ID for TX buffer
+#define PMA_ROLLUP_INPUT_METADATA_DID_DEF     8 ///< Device ID for rollup input metadata buffer
+#define PMA_ROLLUP_VOUCHER_HASHES_DID_DEF     9 ///< Device ID for rollup voucher hashes buffer
+#define PMA_ROLLUP_NOTICE_HASHES_DID_DEF     10 ///< Device ID for rollup notice hashes buffer
 
 // helper for using UINT64_C with defines
 #ifndef EXPAND_UINT64_C
