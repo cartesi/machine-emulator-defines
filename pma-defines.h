@@ -17,25 +17,33 @@
 #ifndef PMA_DEFINES_H
 #define PMA_DEFINES_H
 
-#define PMA_SHADOW_START_DEF        0x0        ///< Shadow start address
-#define PMA_SHADOW_LENGTH_DEF       0x1000     ///< Shadow length in bytes
-#define PMA_START_DEF               0x800      ///< PMA array start address
-#define PMA_ROM_LENGTH_DEF          0xF000     ///< ROM length in bytes
-#define PMA_ROM_START_DEF           0x1000     ///< ROM start address
-#define PMA_CLINT_START_DEF         0x2000000  ///< CLINT start address
-#define PMA_CLINT_LENGTH_DEF        0xC0000    ///< CLINT length in bytes
-#define PMA_HTIF_START_DEF          0x40008000 ///< HTIF base address (to_host)
-#define PMA_HTIF_LENGTH_DEF         0x1000     ///< HTIF length in bytes
-#define PMA_FIRST_VIRTIO_START_DEF  0x40010000 ///< Start of first VIRTIO range (RESERVED)
-#define PMA_VIRTIO_LENGTH_DEF       0x1000     ///< Length of each VIRTIO range (RESERVED)
-#define PMA_LAST_VIRTIO_END_DEF     0x40020000 ///< End of last VIRTIO range (RESERVED)
-#define PMA_DHD_START_DEF           0x40030000 ///< Start of DEHASH range
-#define PMA_DHD_LENGTH_DEF          0x1000     ///< Length of in bytes
-#define PMA_PLIC_START_DEF          0x40100000 ///< Start of PLIC range (RESERVED)
-#define PMA_PLIC_LENGTH_DEF         0x00400000 ///< Length of PLIC range (RESERVED)
-#define PMA_RAM_START_DEF           0x80000000 ///< RAM start address
-#define PMA_ROM_EXTRASPACE_LENGTH_DEF 0x1000   ///< PMA Extension max length in bytes
+#define PMA_SHADOW_START_DEF            0x0        ///< Shadow start address
+#define PMA_SHADOW_LENGTH_DEF           0x1000     ///< Shadow length in bytes
+#define PMA_START_DEF                   0x800      ///< PMA array start address
+#define PMA_ROM_LENGTH_DEF              0xF000     ///< ROM length in bytes
+#define PMA_ROM_START_DEF               0x1000     ///< ROM start address
+#define PMA_CLINT_START_DEF             0x2000000  ///< CLINT start address
+#define PMA_CLINT_LENGTH_DEF            0xC0000    ///< CLINT length in bytes
+#define PMA_HTIF_START_DEF              0x40008000 ///< HTIF base address (to_host)
+#define PMA_HTIF_LENGTH_DEF             0x1000     ///< HTIF length in bytes
+#define PMA_FIRST_VIRTIO_START_DEF      0x40010000 ///< Start of first VIRTIO range (RESERVED)
+#define PMA_VIRTIO_LENGTH_DEF           0x1000     ///< Length of each VIRTIO range (RESERVED)
+#define PMA_LAST_VIRTIO_END_DEF         0x40020000 ///< End of last VIRTIO range (RESERVED)
+#define PMA_DHD_START_DEF               0x40030000 ///< Start of DEHASH range
+#define PMA_DHD_LENGTH_DEF              0x1000     ///< Length of in bytes
+#define PMA_PLIC_START_DEF              0x40100000 ///< Start of PLIC range (RESERVED)
+#define PMA_PLIC_LENGTH_DEF             0x00400000 ///< Length of PLIC range (RESERVED)
+#define PMA_UARCH_ROM_START_DEF        0x60000000  ///< micro architecture ROM start address
+#define PMA_UARCH_ROM_LENGTH_DEF       0x10000     ///< micro architecture ROM length
+#define PMA_UARCH_RAM_START_DEF        0x70000000  ///< micro rchitecture RAM start address
+#define PMA_UARCH_RAM_LENGTH_DEF       0x10000     ///< micro architecture ROM length
+#define PMA_RAM_START_DEF              0x80000000 ///< RAM start address
+
+#define PMA_ROM_EXTRASPACE_LENGTH_DEF  0x1000   ///< PMA Extension max length in bytes
 #define PMA_ROM_EXTRASPACE_START_DEF  (PMA_ROM_START_DEF + PMA_ROM_LENGTH_DEF - PMA_ROM_EXTRASPACE_LENGTH_DEF) ///< PMA extension start address
+
+#define PMA_UARCH_RESERVED_START_DEF   0x7e000000  ///< Start of memory range reserved to microarchitecture
+#define PMA_UARCH_RESERVED_LENGTH_DEF  0x1000      ///< Length of memory range reserved to microarchitecture
 
 #define PMA_BOOTARGS_LENGTH_DEF 0x800 ///< Size reserved on ROM extra space for boot arguments
 
