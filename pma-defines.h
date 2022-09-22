@@ -33,17 +33,17 @@
 #define PMA_DHD_LENGTH_DEF              0x1000     ///< Length of in bytes
 #define PMA_PLIC_START_DEF              0x40100000 ///< Start of PLIC range (RESERVED)
 #define PMA_PLIC_LENGTH_DEF             0x00400000 ///< Length of PLIC range (RESERVED)
-#define PMA_UARCH_ROM_START_DEF        0x60000000  ///< micro architecture ROM start address
-#define PMA_UARCH_ROM_LENGTH_DEF       0x10000     ///< micro architecture ROM length
-#define PMA_UARCH_RAM_START_DEF        0x70000000  ///< micro rchitecture RAM start address
-#define PMA_UARCH_RAM_LENGTH_DEF       0x10000     ///< micro architecture ROM length
-#define PMA_RAM_START_DEF              0x80000000 ///< RAM start address
+#define PMA_UARCH_ROM_START_DEF         0x60000000 ///< micro architecture ROM start address
+#define PMA_UARCH_ROM_LENGTH_DEF        0x10000    ///< micro architecture ROM length
+#define PMA_UARCH_RAM_START_DEF         0x70000000 ///< micro rchitecture RAM start address
+#define PMA_UARCH_RAM_LENGTH_DEF        0x10000    ///< micro architecture ROM length
+#define PMA_RAM_START_DEF               0x80000000 ///< RAM start address
 
 #define PMA_ROM_EXTRASPACE_LENGTH_DEF  0x1000   ///< PMA Extension max length in bytes
 #define PMA_ROM_EXTRASPACE_START_DEF  (PMA_ROM_START_DEF + PMA_ROM_LENGTH_DEF - PMA_ROM_EXTRASPACE_LENGTH_DEF) ///< PMA extension start address
 
-#define PMA_UARCH_RESERVED_START_DEF   0x7e000000  ///< Start of memory range reserved to microarchitecture
-#define PMA_UARCH_RESERVED_LENGTH_DEF  0x1000      ///< Length of memory range reserved to microarchitecture
+#define PMA_UARCH_BRIDGE_START_DEF   0x7ffff000  ///< Start of memory range reserved for microarchitecture control and communication
+#define PMA_UARCH_BRIDGE_LENGTH_DEF  0x1000      ///< Length of memory range reserved for microarchitecture control and communication
 
 #define PMA_BOOTARGS_LENGTH_DEF 0x800 ///< Size reserved on ROM extra space for boot arguments
 
