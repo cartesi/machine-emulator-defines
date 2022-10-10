@@ -17,11 +17,12 @@
 #ifndef PMA_DEFINES_H
 #define PMA_DEFINES_H
 
-#define PMA_SHADOW_START_DEF            0x0        ///< Shadow start address
-#define PMA_SHADOW_LENGTH_DEF           0x1000     ///< Shadow length in bytes
-#define PMA_START_DEF                   0x800      ///< PMA array start address
+#define PMA_SHADOW_STATE_START_DEF      0x0        ///< Shadow start address
+#define PMA_SHADOW_STATE_LENGTH_DEF     0x1000     ///< Shadow length in bytes
 #define PMA_ROM_LENGTH_DEF              0xF000     ///< ROM length in bytes
 #define PMA_ROM_START_DEF               0x1000     ///< ROM start address
+#define PMA_SHADOW_PMAS_START_DEF       0x10000    ///< PMA Array start address
+#define PMA_SHADOW_PMAS_LENGTH_DEF      0x1000     ///< PMA Array length in bytes
 #define PMA_CLINT_START_DEF             0x2000000  ///< CLINT start address
 #define PMA_CLINT_LENGTH_DEF            0xC0000    ///< CLINT length in bytes
 #define PMA_HTIF_START_DEF              0x40008000 ///< HTIF base address (to_host)
@@ -34,16 +35,11 @@
 #define PMA_PLIC_START_DEF              0x40100000 ///< Start of PLIC range (RESERVED)
 #define PMA_PLIC_LENGTH_DEF             0x00400000 ///< Length of PLIC range (RESERVED)
 #define PMA_UARCH_ROM_START_DEF         0x60000000 ///< micro architecture ROM start address
-#define PMA_UARCH_ROM_LENGTH_DEF        0x10000    ///< micro architecture ROM length
 #define PMA_UARCH_RAM_START_DEF         0x70000000 ///< micro rchitecture RAM start address
-#define PMA_UARCH_RAM_LENGTH_DEF        0x10000    ///< micro architecture ROM length
 #define PMA_RAM_START_DEF               0x80000000 ///< RAM start address
 
 #define PMA_ROM_EXTRASPACE_LENGTH_DEF  0x1000   ///< PMA Extension max length in bytes
 #define PMA_ROM_EXTRASPACE_START_DEF  (PMA_ROM_START_DEF + PMA_ROM_LENGTH_DEF - PMA_ROM_EXTRASPACE_LENGTH_DEF) ///< PMA extension start address
-
-#define PMA_UARCH_BRIDGE_START_DEF   0x7ffff000  ///< Start of memory range reserved for microarchitecture control and communication
-#define PMA_UARCH_BRIDGE_LENGTH_DEF  0x1000      ///< Length of memory range reserved for microarchitecture control and communication
 
 #define PMA_BOOTARGS_LENGTH_DEF 0x800 ///< Size reserved on ROM extra space for boot arguments
 
@@ -52,16 +48,17 @@
 #define PMA_MAX_DEF            32    ///< Maximum number of PMAs
 
 #define PMA_MEMORY_DID_DEF                    0 ///< Device ID for memory
-#define PMA_SHADOW_DID_DEF                    1 ///< Device ID for shadow device
-#define PMA_FLASH_DRIVE_DID_DEF               2 ///< Device ID for flash drive device
-#define PMA_CLINT_DID_DEF                     3 ///< Device ID for CLINT device
-#define PMA_HTIF_DID_DEF                      4 ///< Device ID for HTIF device
-#define PMA_DHD_DID_DEF                       5 ///< Device ID for DHD
-#define PMA_ROLLUP_RX_BUFFER_DID_DEF          6 ///< Device ID for rollup RX buffer
-#define PMA_ROLLUP_TX_BUFFER_DID_DEF          7 ///< Device ID for rollup TX buffer
-#define PMA_ROLLUP_INPUT_METADATA_DID_DEF     8 ///< Device ID for rollup input metadata buffer
-#define PMA_ROLLUP_VOUCHER_HASHES_DID_DEF     9 ///< Device ID for rollup voucher hashes buffer
-#define PMA_ROLLUP_NOTICE_HASHES_DID_DEF     10 ///< Device ID for rollup notice hashes buffer
+#define PMA_SHADOW_STATE_DID_DEF              1 ///< Device ID for shadow state device
+#define PMA_SHADOW_PMAS_DID_DEF               2 ///< Device ID for shadow pma array device
+#define PMA_FLASH_DRIVE_DID_DEF               3 ///< Device ID for flash drive device
+#define PMA_CLINT_DID_DEF                     4 ///< Device ID for CLINT device
+#define PMA_HTIF_DID_DEF                      5///< Device ID for HTIF device
+#define PMA_DHD_DID_DEF                       6 ///< Device ID for DHD
+#define PMA_ROLLUP_RX_BUFFER_DID_DEF          7 ///< Device ID for rollup RX buffer
+#define PMA_ROLLUP_TX_BUFFER_DID_DEF          8 ///< Device ID for rollup TX buffer
+#define PMA_ROLLUP_INPUT_METADATA_DID_DEF     9  ///< Device ID for rollup input metadata buffer
+#define PMA_ROLLUP_VOUCHER_HASHES_DID_DEF     10 ///< Device ID for rollup voucher hashes buffer
+#define PMA_ROLLUP_NOTICE_HASHES_DID_DEF      11 ///< Device ID for rollup notice hashes buffer
 
 // helper for using UINT64_C with defines
 #ifndef EXPAND_UINT64_C
