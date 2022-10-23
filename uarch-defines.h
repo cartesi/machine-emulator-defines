@@ -18,9 +18,7 @@
 #define UARCH_DEFINES_H
 
 #define UARCH_MMIO_START_DEF   0x7ffff000  ///< Start of uarch's memory mapped IO addresses
-
 #define UARCH_MMIO_PUTCHAR_ADDR_DEF     (UARCH_MMIO_START_DEF + 0x8)   // NOLINT(cppcoreguidelines-macro-usage)
 #define UARCH_MMIO_ABORT_ADDR_DEF       (UARCH_MMIO_START_DEF + 0x10)  // NOLINT(cppcoreguidelines-macro-usage)
-#define UARCH_MMIO_MARK_PAGE_DIRTY_DEF  (UARCH_MMIO_START_DEF + 0x18)  // NOLINT(cppcoreguidelines-macro-usage)
 
 #endif /* end of include guard: UARCH_DEFINES_H */
