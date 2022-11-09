@@ -23,6 +23,8 @@
 #define PMA_ROM_START_DEF               0x1000     ///< ROM start address
 #define PMA_SHADOW_PMAS_START_DEF       0x10000    ///< PMA Array start address
 #define PMA_SHADOW_PMAS_LENGTH_DEF      0x1000     ///< PMA Array length in bytes
+#define PMA_SHADOW_TLB_START_DEF        0x20000    ///< TLB start address
+#define PMA_SHADOW_TLB_LENGTH_DEF       0x6000     ///< TLB length in bytes
 #define PMA_CLINT_START_DEF             0x2000000  ///< CLINT start address
 #define PMA_CLINT_LENGTH_DEF            0xC0000    ///< CLINT length in bytes
 #define PMA_HTIF_START_DEF              0x40008000 ///< HTIF base address (to_host)
@@ -46,19 +48,21 @@
 #define PMA_PAGE_SIZE_LOG2_DEF 12    ///< log<sub>2</sub> of physical memory page size.
 #define PMA_WORD_SIZE_DEF      8     ///< Physical memory word size.
 #define PMA_MAX_DEF            32    ///< Maximum number of PMAs
+#define PMA_TLB_SIZE_DEF       256   ///< Number for entries per TLB type
 
 #define PMA_MEMORY_DID_DEF                    0 ///< Device ID for memory
 #define PMA_SHADOW_STATE_DID_DEF              1 ///< Device ID for shadow state device
 #define PMA_SHADOW_PMAS_DID_DEF               2 ///< Device ID for shadow pma array device
 #define PMA_FLASH_DRIVE_DID_DEF               3 ///< Device ID for flash drive device
 #define PMA_CLINT_DID_DEF                     4 ///< Device ID for CLINT device
-#define PMA_HTIF_DID_DEF                      5///< Device ID for HTIF device
-#define PMA_DHD_DID_DEF                       6 ///< Device ID for DHD
+#define PMA_HTIF_DID_DEF                      5 ///< Device ID for HTIF device
+#define PMA_SHADOW_TLB_DID_DEF                6 ///< Device ID for shadow TLB device
 #define PMA_ROLLUP_RX_BUFFER_DID_DEF          7 ///< Device ID for rollup RX buffer
 #define PMA_ROLLUP_TX_BUFFER_DID_DEF          8 ///< Device ID for rollup TX buffer
 #define PMA_ROLLUP_INPUT_METADATA_DID_DEF     9  ///< Device ID for rollup input metadata buffer
 #define PMA_ROLLUP_VOUCHER_HASHES_DID_DEF     10 ///< Device ID for rollup voucher hashes buffer
 #define PMA_ROLLUP_NOTICE_HASHES_DID_DEF      11 ///< Device ID for rollup notice hashes buffer
+#define PMA_DHD_DID_DEF                       12 ///< Device ID for DHD device
 
 // helper for using UINT64_C with defines
 #ifndef EXPAND_UINT64_C
