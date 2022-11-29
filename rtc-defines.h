@@ -18,8 +18,13 @@
 #define RTC_DEFINES_H
 
 /// \brief Number of cycles between RTC ticks
-/// Changing this value afects the machine state hash
+/// Changing this value affects the machine state hash
 /// Higher values decrease the performance of the interactive machine emulator
-#define RTC_FREQ_DIV_DEF 100
+/// Using base 2 values optimizes division and multiplications in the interpreter loop
+#define RTC_FREQ_DIV_DEF    8192
+
+/// \brief Arbitrary CPU clock frequency.
+/// We have to make sure the clock frequency is divisible by RTC_FREQ_DIV_DEF and 10^6
+#define RTC_CLOCK_FREQ_DEF  128000000 ///< 128 MHz frequency
 
 #endif /* end of include guard: RTC_DEFINES_H */
