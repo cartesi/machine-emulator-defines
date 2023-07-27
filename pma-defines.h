@@ -19,8 +19,6 @@
 
 #define PMA_SHADOW_STATE_START_DEF      0x0        ///< Shadow start address
 #define PMA_SHADOW_STATE_LENGTH_DEF     0x1000     ///< Shadow length in bytes
-#define PMA_DTB_START_DEF               0x1000     ///< DTB start address
-#define PMA_DTB_LENGTH_DEF              0xF000     ///< DTB length in bytes
 #define PMA_SHADOW_PMAS_START_DEF       0x10000    ///< PMA Array start address
 #define PMA_SHADOW_PMAS_LENGTH_DEF      0x1000     ///< PMA Array length in bytes
 #define PMA_SHADOW_TLB_START_DEF        0x20000    ///< TLB start address
@@ -37,6 +35,8 @@
 #define PMA_PLIC_START_DEF              0x40100000 ///< Start of PLIC range (RESERVED)
 #define PMA_PLIC_LENGTH_DEF             0x00400000 ///< Length of PLIC range (RESERVED)
 #define PMA_UARCH_RAM_START_DEF         0x70000000 ///< microarchitecture RAM start address
+#define PMA_DTB_START_DEF               0x7ff00000 ///< DTB start address
+#define PMA_DTB_LENGTH_DEF              0x100000   ///< DTB length in bytes
 #define PMA_RAM_START_DEF               0x80000000 ///< RAM start address
 
 #define PMA_PAGE_SIZE_LOG2_DEF 12    ///< log<sub>2</sub> of physical memory page size.
