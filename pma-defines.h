@@ -36,7 +36,8 @@
 #define PMA_DHD_LENGTH_DEF              0x1000     ///< Length of in bytes
 #define PMA_PLIC_START_DEF              0x40100000 ///< Start of PLIC range (RESERVED)
 #define PMA_PLIC_LENGTH_DEF             0x00400000 ///< Length of PLIC range (RESERVED)
-#define PMA_UARCH_RAM_START_DEF         0x70000000 ///< microarchitecture RAN start address
+#define PMA_UARCH_RAM_START_DEF         0x70000000 ///< microarchitecture RAM start address
+#define PMA_UARCH_RAM_LENGTH_DEF        0x80000    ///< microarchitecture RAM length
 #define PMA_RAM_START_DEF               0x80000000 ///< RAM start address
 
 #define PMA_ROM_EXTRASPACE_LENGTH_DEF  0x1000   ///< PMA Extension max length in bytes
