@@ -1,5 +1,11 @@
 # Cartesi Machine Emulator Defines
 
+> [!WARNING]
+> **This repository is no longer maintained.**
+> Starting with machine-emulator v0.16.0, these definitions live in the [src](https://github.com/cartesi/machine-emulator/tree/main/src) directory of cartesi/machine-emulator.
+> Existing tags here remain available for older projects.
+> Do not use this repository for new development.
+
 The Cartesi Machine Emulator Defines is a set of C Headers with some PMA and RTC definitions that are shared across Cartesi projects.
 
 ## Contributing
